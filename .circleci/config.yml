@@ -8,8 +8,8 @@ workflows:
       build:
         docker:
           - image: lash/xfoo
-        environment:
-          XFOO: barr
+            environment:
+              XFOO: barr
         steps:
           run: |
             docker run --name xfoo lash/xfoo
