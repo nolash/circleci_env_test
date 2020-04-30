@@ -1,6 +1,11 @@
 version: 2.1
+jobs:
+  build:
+    docker:
+      - image: lash/xfoo
+
 workflows:
-  jobs:
-    build:
-      docker:
-        - image: lash/xfoo
+  version: 2.1
+  yeah:
+    jobs:
+      - build
