@@ -3,14 +3,13 @@ version: 2.1
 # Use a package of configuration called an orb.
 # Orchestrate or schedule a set of jobs
 workflows:
-  # Name the workflow "welcome"
-    # Run the welcome/run job in its own container
-  jobs:
-    build:
-      docker:
-        - image: lash/xfoo
-      environment:
-        XFOO: barr
-      steps:
-        run: |
-          docker run --name xfoo lash/xfoo
+  welcome:
+    jobs:
+      build:
+        docker:
+          - image: lash/xfoo
+        environment:
+          XFOO: barr
+        steps:
+          run: |
+            docker run --name xfoo lash/xfoo
