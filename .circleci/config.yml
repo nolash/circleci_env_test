@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: lash/xfoo
+        environment:
+          XFOO: bar 
     steps:
       - run: /usr/bin/python /do.py
 workflows:
