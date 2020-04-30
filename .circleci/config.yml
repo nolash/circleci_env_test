@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: lash/xfoo
     steps:
-      - run: docker run --name foo lash/xfoo
+      - run: /usr/bin/python /do.py
 workflows:
   version: 2.1
   yeah:
