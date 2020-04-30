@@ -11,5 +11,5 @@ workflows:
             environment:
               XFOO: barr
           steps:
-            run: |
-              docker run --name xfoo lash/xfoo
+            - run: docker run --name xfoo lash/xfoo
+              
