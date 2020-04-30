@@ -10,6 +10,7 @@ workflows:
           - image: lash/xfoo
             environment:
               XFOO: barr
-          steps:
-            - run: docker run --name xfoo lash/xfoo
+        steps:
+          - run: docker run --name xfoo lash/xfoo
+
               
